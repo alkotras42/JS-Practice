@@ -3,6 +3,9 @@ const postData = async (url, data) => {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, POST',
+      'Access-Control-Allow-Headers': 'Content-Type',
     },
     body: data,
   })
