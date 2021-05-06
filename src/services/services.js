@@ -1,6 +1,7 @@
 const postData = async (url, data) => {
   const res = await fetch(url, {
     method: 'POST',
+    mode: 'no-cors',
     headers: {
       'Content-Type': 'application/json',
       'Access-Control-Allow-Origin': '*',
