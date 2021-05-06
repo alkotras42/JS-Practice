@@ -33,7 +33,7 @@ function forms(formSelector, modalTimer) {
   
         const json = JSON.stringify(Object.fromEntries(formData.entries()))
   
-        postData('http://localhost:3000/requests', json)
+        postData('https://agile-waters-64645.herokuapp.com/', json)
           .then((data) => {
             console.log(data)
             showThanksModal(message.success)
