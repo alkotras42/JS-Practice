@@ -43,7 +43,7 @@ function cards() {
 
 
 
-  getContent('http://localhost:3000/menu').then((data) => {
+  getContent('https://git.heroku.com/agile-waters-64645.git').then((data) => {
     data.forEach(({ img, alt, title, descr, price }) => {
       new MenuCard(img, alt, title, descr, price, '.menu .container').render()
     })
